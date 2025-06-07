@@ -6,10 +6,10 @@ import { Observable } from 'rxjs';
   selector: 'app-api',
   imports: [],
   templateUrl: './api.html',
-  styleUrl: './api.css'
+  styleUrl: './api.css',
 })
 export class Api {
-  private API_URL = 'http://localhost:3000'; // เปลี่ยนเป็น API จริง
+  private API_URL = 'http://192.168.147.53:3000'; // เปลี่ยนเป็น API จริง
   private get headers(): HttpHeaders {
     const token = localStorage.getItem('auth_token');
     return new HttpHeaders({
